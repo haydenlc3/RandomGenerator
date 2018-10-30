@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        android:background="@android:color/holo_red_light">
+
+        <EditText
+            android:id="@+id/IntegerMinValue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:ems="10"
+            android:hint="Minimum value"
+            android:inputType="number|numberSigned"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/IntegerResult"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            app:fontFamily="monospace" />
+
+        <Button
+            android:id="@+id/GenIntegerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/CopyIntegerButton"
+            android:background="#00cc00"
+            android:text="Go"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/CopyIntegerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/holo_orange_light"
+            android:text="Copy"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Integer"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="monospace" />
+
+        <EditText
+            android:id="@+id/IntegerMaxValue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/IntegerMinValue"
+            android:layout_below="@+id/IntegerMinValue"
+            android:ems="10"
+            android:hint="Maximum value"
+            android:inputType="number|numberSigned"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        android:background="@android:color/holo_purple">
+
+        <TextView
+            android:id="@+id/DecimalResult"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            app:fontFamily="monospace" />
+
+        <Button
+            android:id="@+id/GenDecimalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/DecimalResult"
+            android:background="#00cc00"
+            android:text="Go"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/CopyDecimalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/holo_orange_light"
+            android:text="Copy"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Decimal"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="monospace" />
+
+        <EditText
+            android:id="@+id/DecimalMinValue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:ems="10"
+            android:hint="Minimum value"
+            android:inputType="numberSigned|numberDecimal"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/DecimalMaxValue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/DecimalMinValue"
+            android:layout_below="@+id/DecimalMinValue"
+            android:ems="10"
+            android:hint="Maximum value"
+            android:inputType="numberSigned|numberDecimal"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".25"
+        android:background="@android:color/holo_blue_dark">
+
+        <TextView
+            android:id="@+id/StringResult"
+            android:layout_width="176dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            app:fontFamily="monospace" />
+
+        <Button
+            android:id="@+id/GenStringButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/StringResult"
+            android:background="#00cc00"
+            android:text="Go"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/CopyStringButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/holo_orange_light"
+            android:text="Copy"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="String"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:fontFamily="monospace" />
+
+        <CheckBox
+            android:id="@+id/LowercaseCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/StringMaxLength"
+            android:layout_below="@+id/textView"
+            android:checked="true"
+            android:text="Lowercase"
+            android:typeface="monospace" />
+
+        <CheckBox
+            android:id="@+id/UppercaseCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:text="Uppercase"
+            android:typeface="monospace" />
+
+        <CheckBox
+            android:id="@+id/NumbersCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginEnd="24dp"
+            android:text="Numbers"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/StringMinLength"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:ems="10"
+            android:hint="Minimum length"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:typeface="monospace" />
+
+        <EditText
+            android:id="@+id/StringMaxLength"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/StringMinLength"
+            android:layout_below="@+id/StringMinLength"
+            android:ems="10"
+            android:hint="Maximum length"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:typeface="monospace" />
+
+    </RelativeLayout>
+
+</LinearLayout>
